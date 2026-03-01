@@ -11,6 +11,23 @@ A Telegram bot skill for [OpenClaw](https://openclaw.ai) that summarizes YouTube
 - **Error Handling** — Friendly messages for invalid URLs, missing captions, private videos, rate limits
 - **Bonus Commands** — `/summary`, `/deepdive`, `/actionpoints`, `/lang`
 
+## Screenshots
+
+### Video Summary
+![Summary](screenshots/summary.png)
+
+### Follow-up Q&A
+![Q&A Answer](screenshots/qa-answer.png)
+
+### Not Covered in Video
+![Not Covered](screenshots/qa-not-covered.png)
+
+### Hindi Summary
+![Hindi](screenshots/hindi.png)
+
+### Error Handling
+![Error](screenshots/error.png)
+
 ## Architecture
 
 ```
@@ -108,9 +125,9 @@ youtube-summarizer/
 │   ├── format_transcript.py  ← Raw transcript → timestamped text
 │   └── chunk_transcript.py   ← Splits long transcripts into chunks
 ├── cache/                    ← Auto-created, stores transcript JSON files
+├── screenshots/              ← Demo screenshots for README
 ├── requirements.txt
 ├── .gitignore
-├── checklist.md              ← Project progress tracker
 └── README.md
 ```
 
